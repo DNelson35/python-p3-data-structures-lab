@@ -1,3 +1,5 @@
+import time
+
 spicy_foods = [
     {
         "name": "Green Curry",
@@ -46,4 +48,30 @@ def create_spicy_food(spicy_foods, spicy_food):
     spicy_foods.append(spicy_food)
     return spicy_foods
 
+
+#  simple labs after this line
+
+# The parrot() function should accept an argument of a string and both print() and return the string at the end of the function.
+
+def parrot(str = "squawk!"):
+    print(str)
+    return str
+
+
+# Write a function countdown() that takes in an integer argument and uses a while loop to countdown from that integer to 1, outputting f'{number} SECOND(S)!' in each iteration of the loop. The function should print() "HAPPY NEW YEAR!" after the loop finishes:
+
+def countdown(num):
+    i = num
+    while i > 0:
+        print(i)
+        i -= 1
+        time.sleep(1)
+    
+    print("Happy New Year!")
+
+countdown(20)
+
+
+
+        
 
